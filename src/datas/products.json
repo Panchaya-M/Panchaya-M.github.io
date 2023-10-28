@@ -1,0 +1,318 @@
+[
+  {
+    "id": 1,
+    "code": "VS001",
+    "name": "Mordern Circle Vase",
+    "price": 99,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [
+      {
+        "rating": 5,
+        "detail": "Excellent!",
+        "author": "Apple"
+      },
+      {
+        "rating": 3,
+        "detail": "Neutral!",
+        "author": "Orange"
+      }
+    ],
+    "category": ["deco", "vase"],
+    "storage": 34,
+    "recommend": true,
+    "created_at": "2023-05-02",
+    "percent_discount": 24
+  },
+  {
+    "id": 2,
+    "code": "SC001",
+    "name": "Figure Scented Candle",
+    "price": 117,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [
+      {
+        "rating": 4,
+        "detail": "Good!",
+        "author": "Apple"
+      }
+    ],
+    "category": ["deco", "candle"],
+    "storage": 27,
+    "created_at": "2023-05-07"
+  },
+  {
+    "id": 3,
+    "code": "VS002",
+    "name": "Black Pear Vase",
+    "price": 56,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [
+      {
+        "rating": 4,
+        "detail": "Good!",
+        "author": "Apple"
+      }
+    ],
+    "category": ["deco", "vase"],
+    "storage": 59,
+    "created_at": "2023-05-08"
+  },
+  {
+    "id": 4,
+    "code": "SC002",
+    "name": "Incense Holder",
+    "price": 63,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [
+      {
+        "rating": 3,
+        "detail": "Neutral!",
+        "author": "Orange"
+      },
+      {
+        "rating": 4,
+        "detail": "Good!",
+        "author": "Apple"
+      }
+    ],
+    "category": ["deco", "candle", "tray"],
+    "storage": 55,
+    "recommend": true,
+    "created_at": "2023-05-12"
+  },
+  {
+    "id": 5,
+    "code": "VS003",
+    "name": "Pure Melon Vase",
+    "price": 57,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [],
+    "category": ["deco", "vase"],
+    "storage": 0,
+    "created_at": "2023-05-15",
+    "percent_discount": 34
+  },
+  {
+    "id": 6,
+    "code": "VS004",
+    "name": "Desert Stone Vase",
+    "price": 200,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [],
+    "category": ["deco", "vase"],
+    "storage": 26,
+    "created_at": "2023-05-19",
+    "percent_discount": 25
+  },
+  {
+    "id": 7,
+    "code": "VS005",
+    "name": "Rain Doll Vase",
+    "price": 135,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [
+      {
+        "rating": 5,
+        "detail": "Excellent!",
+        "author": "Apple"
+      }
+    ],
+    "category": ["deco", "vase"],
+    "storage": 37,
+    "created_at": "2023-05-23"
+  },
+  {
+    "id": 8,
+    "code": "LP001",
+    "name": "White Circle Lamp",
+    "price": 108,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [],
+    "category": ["deco", "lamp"],
+    "storage": 32,
+    "created_at": "2023-05-25",
+    "percent_discount": 36
+  },
+  {
+    "id": 9,
+    "code": "LP002",
+    "name": "Mordern Curve Vase",
+    "price": 107,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [],
+    "category": ["deco", "lamp"],
+    "storage": 10,
+    "created_at": "2023-06-14",
+    "percent_discount": 24
+  },
+  {
+    "id": 10,
+    "code": "VS006",
+    "name": "Mordern Jar Vase",
+    "price": 72,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [],
+    "category": ["deco", "vase"],
+    "storage": 9,
+    "recommend": true,
+    "created_at": "2023-07-03",
+    "percent_discount": 38
+  },
+  {
+    "id": 11,
+    "code": "VS007",
+    "name": "Face Vase",
+    "price": 162,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [],
+    "category": ["deco", "vase", "candle"],
+    "storage": 0,
+    "created_at": "2023-07-06"
+  },
+  {
+    "id": 12,
+    "code": "CS003",
+    "name": "Geometry Candle Stick",
+    "price": 179,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [
+      {
+        "rating": 3,
+        "detail": "Neutral!",
+        "author": "Orange"
+      }
+    ],
+    "category": ["deco", "candle"],
+    "storage": 4,
+    "created_at": "2023-07-11"
+  },
+  {
+    "id": 13,
+    "code": "CS004",
+    "name": "Jar Scented Candle",
+    "price": 122,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [
+      {
+        "rating": 5,
+        "detail": "Excellent!",
+        "author": "Apple"
+      }
+    ],
+    "category": ["deco",  "candle"],
+    "storage": 73,
+    "created_at": "2023-07-20",
+    "percent_discount": 32
+  },
+  {
+    "id": 14,
+    "code": "CS005",
+    "name": "Yellow Coffee Cup Scented Candle",
+    "price": 89,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [
+      {
+        "rating": 5,
+        "detail": "Excellent!",
+        "author": "Apple"
+      }
+    ],
+    "category": ["deco", "candle"],
+    "storage": 58,
+    "created_at": "2023-07-25",
+    "percent_discount": 23
+  },
+  {
+    "id": 15,
+    "code": "CS006",
+    "name": "Classic Candel Stick",
+    "price": 193,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [],
+    "category": ["deco", "candle"],
+    "storage": 37,
+    "created_at": "2023-08-06"
+  },
+  {
+    "id": 16,
+    "code": "VS008",
+    "name": "Tear Vase",
+    "price": 196,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [],
+    "category": ["deco", "vase"],
+    "storage": 64,
+    "created_at": "2023-08-10"
+  },
+  {
+    "id": 17,
+    "code": "WT001",
+    "name": "Fruits Wooden Tray",
+    "price": 70,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [
+      {
+        "rating": 3,
+        "detail": "Neutral!",
+        "author": "Orange"
+      }
+    ],
+    "category": ["deco", "tray"],
+    "storage": 85,
+    "recommend": true,
+    "created_at": "2023-08-20"
+  },
+  {
+    "id": 18,
+    "code": "CC001",
+    "name": "Middle Bowl Vase",
+    "price": 77,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [],
+    "category": ["deco", "tray"],
+    "storage": 82,
+    "created_at": "2023-08-25",
+    "percent_discount": 27
+  },
+  {
+    "id": 19,
+    "code": "DC001",
+    "name": "People Head",
+    "price": 199,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [
+      {
+        "rating": 4,
+        "detail": "Good!",
+        "author": "Apple"
+      }
+    ],
+    "category": ["deco"],
+    "storage": 55,
+    "created_at": "2023-09-08"
+  },
+  {
+    "id": 20,
+    "code": "VS009",
+    "name": "White Shellfish Vase",
+    "price": 135,
+    "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
+    "reviews": [
+      {
+        "rating": 4,
+        "detail": "Good!",
+        "author": "Apple"
+      },
+      {
+        "rating": 3,
+        "detail": "Neutral!",
+        "author": "Orange"
+      }
+    ],
+    "category": ["deco", "vase"],
+    "storage": 50,
+    "recommend": true,
+    "created_at": "2023-09-19",
+    "percent_discount": 24
+  }
+]
