@@ -12,6 +12,7 @@ let pathname = window.location.pathname;
 if (pathname.includes('/')) {
   createBestSellerProducts();
   createNewItems();
+  createPromotionProducts();
 }
 
 function filterBestSellerProducts() {
@@ -31,6 +32,10 @@ function filterNemItems() {
   return newItems
 }
 
+function filterPromotionProducts() {
+  return products.filter((product) => product.percent_discount);
+}
+
 function createBestSellerProducts() {
   let bestSellerProducts = filterBestSellerProducts();
 
@@ -48,6 +53,15 @@ function createNewItems() {
     creatCardProduct(element, product);
   }
   carouseButtons('new-items');
+}
+
+function createPromotionProducts() {
+  let promotionProducts = filterPromotionProducts();
+  let element = document.getElementById('promotions');
+  for(let product of promotionProducts) {
+    creatCardProduct(element, product);
+  }
+  carouseButtons('promotions');
 }
 
 function creatCardProduct(element, product) {

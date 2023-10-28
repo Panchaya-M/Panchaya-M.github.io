@@ -158,8 +158,16 @@ li .list-group-item--active::before {
   background-color: #E4DDD5 !important;
 }
 
+.bg-tertiary {
+  background-color: #FFFAF0 !important;
+}
+
 .c-primary {
   color: var(--primary);
+}
+
+.carousel-container .card {
+  border: none;
 }
 
 .card-img {
