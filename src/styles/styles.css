@@ -195,6 +195,10 @@ li .list-group-item--active::before {
   font-size: 12px;
 }
 
+.f-14 {
+  font-size: 14px !important;
+}
+
 .strikethrough {
   text-decoration: line-through;
 }
@@ -250,6 +254,25 @@ li .list-group-item--active::before {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+footer {
+  background-color: #6A6A6A;
+  color: #FFF !important;
+}
+
+footer .nav-link {
+  list-style-type: none;
+  color: #FFF !important;
+  font-size: 14px;
+}
+
+.social-media {
+  background-color: #797979;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 @media (max-width: 576px) {
