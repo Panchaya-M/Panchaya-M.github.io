@@ -81,7 +81,7 @@ function creatCardProduct(element, product) {
     </p>
     <div class="d-flex justify-content-between align-items-end">
       <div class="col">
-        <h5 class="text-red m-0">$99.00 <span class="text-gray f-12 trikethrough">$200.00</span></h5>
+      ${calculatePriceOfProduct(product.price, product.percent_discount)}
       </div>
       <div class="col text-end">
         ${createAddToCartButton(id)}
@@ -211,4 +211,14 @@ function createAddToCartButton(id) {
   button.textContent = 'ADD TO CART'
 
   return button.outerHTML;
+}
+
+//Calculate price after discount
+function calculatePriceOfProduct(fullPrice, percentDiscount) {
+  if (!percentDiscount) {
+    return `<h5 class="m-0">$${fullPrice.toFixed(2)}</h5>`
+  }
+
+  const discountPrice = fullPrice - (fullPrice * percentDiscount / 100);
+  return `<h5 class="text-red m-0">$${discountPrice.toFixed(2)} <span class="text-gray f-12 strikethrough">$${fullPrice.toFixed(2)}</span></h5>`
 }
