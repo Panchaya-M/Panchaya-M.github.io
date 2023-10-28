@@ -48,6 +48,11 @@ html, body {
   position: relative;
 }
 
+.sidebar .nav-link:hover {
+  color: #424530;
+  background-color: #42453017;
+}
+
 .sidebar .nav-link--active {
   background-color: #42453017
 }
@@ -91,4 +96,28 @@ html, body {
 
 hr {
   margin: 0;
+}
+
+li .list-group-item {
+  background-color: #E4DDD5;
+  border: none;
+  padding-left: 40px;
+}
+
+li .list-group-item:hover {
+  background-color: #42453017;
+}
+
+li .list-group-item--active {
+  background-color: #42453017
+}
+
+li .list-group-item--active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #424530;
 }
