@@ -252,78 +252,114 @@
     </div>
   </header>
 
-  <section class="container-fluid px-0"
-    id="advertising">
-    <div id="carouselAdvertising"
-      class="carousel slide">
-      <div class="carousel-indicators mb-0">
-        <button type="button"
-          data-bs-target="#carouselAdvertising"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-          style="border-bottom: 4px solid transparent;"></button>
-        <button type="button"
-          data-bs-target="#carouselAdvertising"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-          style="border-bottom: 4px solid transparent;"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="src/images/promotion_discout_1x.webp"
-            class="d-block w-100"
-            alt="Up to 40% off">
-          <div class="carousel-caption py-0 py-md-2">
-            <a href="/products.html"
-              class="btn button-primary">SHOP NOW</a>
+  <div class="container-fluid px-0">
+    <section id="advertising">
+      <div id="carouselAdvertising"
+        class="carousel slide">
+        <div class="carousel-indicators mb-0">
+          <button type="button"
+            data-bs-target="#carouselAdvertising"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+            style="border-bottom: 4px solid transparent;"></button>
+          <button type="button"
+            data-bs-target="#carouselAdvertising"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            style="border-bottom: 4px solid transparent;"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="src/images/promotion_discout_1x.webp"
+              class="d-block w-100"
+              alt="Up to 40% off">
+            <div class="carousel-caption py-0 py-md-2">
+              <a href="/products.html"
+                class="btn button-primary">SHOP NOW</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="src/images/promotion_free_delivery_1x.webp"
+              class="d-block w-100"
+              alt="buy 3 items free delivery">
+
+            <div class="carousel-caption py-0 py-md-2">
+              <a href="/products.html"
+                class="btn button-primary">SHOP NOW</a>
+            </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="src/images/promotion_free_delivery_1x.webp"
-            class="d-block w-100"
-            alt="buy 3 items free delivery">
+        <button class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselAdvertising"
+          data-bs-slide="prev">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#a58e74"
+            class="bi bi-chevron-left"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+          </svg>
+        </button>
+        <button class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselAdvertising"
+          data-bs-slide="next">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#a58e74"
+            class="bi bi-chevron-right"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+          </svg>
+        </button>
+      </div>
+    </section>
 
-          <div class="carousel-caption py-0 py-md-2">
-            <a href="/products.html"
-              class="btn button-primary">SHOP NOW</a>
+    <section class="bg-secondary">
+      <div class="container py-5">
+        <h1 class="c-primary">BEST SELLER</h1>
+        <div class="carousel-container">
+          <button class="carousel-control-prev justify-content-start"
+            type="button"
+            id="prevBtn-bestseller">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#a58e74"
+              class="bi bi-chevron-left"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+            </svg>
+          </button>
+          <button class="carousel-control-next justify-content-end"
+            type="button"
+            id="nextBtn-bestseller">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#a58e74"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <div class="carousel-slide carousel-slide-bestseller gap-3" id="best-seller">
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselAdvertising"
-        data-bs-slide="prev">
-        <svg xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="#a58e74"
-          class="bi bi-chevron-left"
-          viewBox="0 0 16 16">
-          <path fill-rule="evenodd"
-            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-        </svg>
-      </button>
-      <button class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselAdvertising"
-        data-bs-slide="next">
-        <svg xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="#a58e74"
-          class="bi bi-chevron-right"
-          viewBox="0 0 16 16">
-          <path fill-rule="evenodd"
-            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-        </svg>
-      </button>
-    </div>
-  </section>
-
-
-  <script src="script.js"></script>
+    </section>
+  </div>
+  
+  <script type="module" src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
