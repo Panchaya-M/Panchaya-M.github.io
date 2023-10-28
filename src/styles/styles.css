@@ -150,6 +150,10 @@ li .list-group-item--active::before {
   bottom: 12%;
 }
 
+.bg-primary {
+  background-color: #C6C7C1 !important;
+}
+
 .bg-secondary {
   background-color: #E4DDD5 !important;
 }
