@@ -1,4 +1,4 @@
-let products = [];
+export let products = [];
 let slideIndex = 0;
 
 async function loadData() {
@@ -9,7 +9,7 @@ async function loadData() {
 await loadData();
 
 let pathname = window.location.pathname;
-if (pathname.includes('/')) {
+if (pathname === '/') {
   createBestSellerProducts();
   createNewItems();
   createPromotionProducts();
@@ -64,21 +64,23 @@ function createPromotionProducts() {
   carouseButtons('promotions');
 }
 
-function creatCardProduct(element, product) {
+export function creatCardProduct(element, product) {
   const id = product.id;
   let card = document.createElement('div');
   card.classList.add('card');
 
   card.innerHTML = `<div id="img-${id}" class="card-img" style="background-image: url(src/images/products/product_${id}.webp);"></div>
-  <div class="card-body px-0">
-    <h4 class="m-0 cursor-pointer" id="name-${id}">${product.name}</h4>
-    <div class="d-flex align-items-center gap-1">
-      ${createRatingStar(findMeanOfRating(product.reviews))} 
-      <div class="text-gray f-12 pt-2">(${findMeanOfRating(product.reviews).toFixed(1)})</div>
+  <div class="card-body px-0 d-flex flex-column justify-content-between">
+    <div>
+      <h4 class="m-0 cursor-pointer" id="name-${id}">${product.name}</h4>
+      <div class="d-flex align-items-center gap-1">
+        ${createRatingStar(findMeanOfRating(product.reviews))} 
+        <div class="text-gray f-12 pt-2">(${findMeanOfRating(product.reviews).toFixed(1)})</div>
+      </div>
+      <p class="card-product-detail text-muted pt-2">
+        ${product.description}
+      </p>
     </div>
-    <p class="card-product-detail text-muted pt-2">
-      Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!
-    </p>
     <div class="d-flex justify-content-between align-items-end">
       <div class="col">
       ${calculatePriceOfProduct(product.price, product.percent_discount)}
