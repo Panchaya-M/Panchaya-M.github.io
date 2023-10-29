@@ -276,6 +276,11 @@ footer .nav-link {
   background-color: #EFEFEF;
 }
 
+.active>.page-link, .page-link.active {
+  background-color: #F1EEEA !important;
+  border-color: #dee2e6 !important;
+}
+
 @media (max-width: 576px) {
   .carousel-caption .button-primary {
     border: none;
