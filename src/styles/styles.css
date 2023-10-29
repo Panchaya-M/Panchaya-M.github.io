@@ -166,10 +166,6 @@ li .list-group-item--active::before {
   color: var(--primary);
 }
 
-.carousel-container .card {
-  border: none;
-}
-
 .card-img {
   height: 400px;
   background-size: 100% auto; 
@@ -223,10 +219,11 @@ li .list-group-item--active::before {
   transition: transform 0.5s ease-in-out;
 }
 
-.carousel-slide .card {
+.card {
   min-width: 350px;
   width: 350px;
   padding: 1rem 1rem 0rem 1rem;
+  border: none;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -273,6 +270,10 @@ footer .nav-link {
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
   font-size: 14px;
+}
+
+#product-container .card {
+  background-color: #EFEFEF;
 }
 
 @media (max-width: 576px) {

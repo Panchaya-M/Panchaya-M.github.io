@@ -2,7 +2,7 @@
   {
     "id": 1,
     "code": "VS001",
-    "name": "Mordern Circle Vase",
+    "name": "Modern Circle Vase",
     "price": 99,
     "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
     "reviews": [
@@ -136,7 +136,7 @@
   {
     "id": 9,
     "code": "LP002",
-    "name": "Mordern Curve Vase",
+    "name": "Modern Curve Vase",
     "price": 107,
     "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
     "reviews": [],
@@ -148,7 +148,7 @@
   {
     "id": 10,
     "code": "VS006",
-    "name": "Mordern Jar Vase",
+    "name": "Modern Jar Vase",
     "price": 72,
     "description": "Product description goes here, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem sequi architecto debitis accusantium omnis ullam perferendis non reprehenderit, rem unde odit magni. Velit aperiam et alias, tempore unde quis!",
     "reviews": [],
