@@ -1,10 +1,13 @@
 import { products, creatCardProduct } from "./script.js";
 
-console.log('products :>> ', products);
+const urlParams = new URLSearchParams(window.location.search);
+const categoryFilter = urlParams.get("category");
 
-let pathname = window.location.pathname;
-if (pathname.includes('/products.html')) {
+if (!categoryFilter) {
   createProducts(products);
+} else {
+  const filterProducts = products.filter((product) => product.category.some((category) => categoryFilter === category));
+  createProducts(filterProducts);
 }
 
 function createProducts(products) {
