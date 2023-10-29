@@ -279,8 +279,31 @@
             </span>
           </div>
         </form>
-        <div>
-          <img src="src/images/icons/sort.svg" alt="Sort">
+        <div class="dropdown">
+          <button type="button" 
+            class="nav-link"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="src/images/icons/sort.svg" alt="Sort">
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <button class="dropdown-item"
+                id="sort-relevance"
+                type="button">Relevance</button>
+            </li>
+            <li>
+              <button class="dropdown-item"
+                id="sort-low"
+                type="button">Price (Low - High)
+            </button>
+            </li>
+            <li>
+              <button class="dropdown-item"
+                id="sort-high"
+                type="button">Price (High - Low)</button>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
