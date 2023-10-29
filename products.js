@@ -27,7 +27,7 @@ function displayTitle() {
 function getTitle() {
   switch (categoryFilter) {
     case 'vase':
-      return 'VASEA';
+      return 'VASES';
     case 'candle':
       return 'CANDLES';
     case 'tray':
