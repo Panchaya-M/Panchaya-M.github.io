@@ -22,9 +22,9 @@ function createProducts(products) {
   }
 }
 
-function displayTitle() {
+function displayTitle(isSearch = false) {
   let titleElement = document.getElementById('title-products');
-  let title = getTitle();
+  let title = isSearch ? 'PRODUCTS' : getTitle();
   titleElement.textContent = title;
 }
 
@@ -78,3 +78,18 @@ function calculatePriceOfProduct(fullPrice, percentDiscount) {
   const discountPrice = fullPrice - (fullPrice * percentDiscount / 100);
   return discountPrice.toFixed(2);
 }
+
+const searchInput = document.getElementById('search');
+searchInput.addEventListener('keyup', function(event) {
+  const input = event.target.value
+  if (input.length >= 2) {
+    const searchProducts = products.filter(product => {
+      const isNameMatch = product.name.toLowerCase().includes(input.toLowerCase());
+      const isCategoryMatch = product.category.includes(input.toLowerCase());
+      return isNameMatch || isCategoryMatch;
+    });
+    displayTitle(true);
+    filterProducts = searchProducts;
+    createProducts(searchProducts);
+  }
+})
