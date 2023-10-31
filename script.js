@@ -69,10 +69,15 @@ export function creatCardProduct(element, product) {
   let card = document.createElement('div');
   card.classList.add('card');
 
-  card.innerHTML = `<div id="img-${id}" class="card-img" style="background-image: url(src/images/products/product_${id}.webp);"></div>
+  card.innerHTML = `
+  <a href="/product-detail.html?id=${id}">
+    <div id="img-${id}" class="card-img" style="background-image: url(src/images/products/product_${id}.webp);"></div>
+  </a>
   <div class="card-body px-0 d-flex flex-column justify-content-between">
     <div>
-      <h4 class="m-0 cursor-pointer" id="name-${id}">${product.name}</h4>
+      <a href="/product-detail.html?id=${id}">
+        <h4 class="m-0 cursor-pointer product-name" id="name-${id}">${product.name}</h4>
+      </a>
       <div class="d-flex align-items-center gap-1">
         ${createRatingStar(findMeanOfRating(product.reviews))} 
         <div class="text-gray f-12 pt-2">(${findMeanOfRating(product.reviews).toFixed(1)})</div>
@@ -92,16 +97,6 @@ export function creatCardProduct(element, product) {
   </div>`
   element.appendChild(card)
 
-  const cardImage = document.getElementById(`img-${id}`);
-  cardImage.addEventListener('click', function() {
-    goToProduct(id)
-  })
-
-  const name = document.getElementById(`name-${id}`);
-  name.addEventListener('click', function() {
-    goToProduct(id)
-  })
-
   const button = document.getElementById(`btn-${id}`);
   button.addEventListener('click', function() {
     addtoCart(id)
@@ -110,10 +105,6 @@ export function creatCardProduct(element, product) {
 
 function addtoCart(id) {
   console.log('Add Product' + id + ' to cart.');
-}
-
-function goToProduct(id) {
-  console.log('go to Product', id);
 }
 
 //Carousel slide
@@ -148,7 +139,7 @@ function carouseButtons(section) {
 }
 
 //Rating star
-function createRatingStar(rating) {
+export function createRatingStar(rating) {
   let stars = document.createElement('div');
   stars.classList.add('rating-star');
   if (!rating) {
@@ -194,7 +185,7 @@ function createRatingStar(rating) {
   return stars.outerHTML;
 }
 
-function findMeanOfRating(reviews) {
+export function findMeanOfRating(reviews) {
   let sum = 0;
   reviews.forEach((review) => {
     sum += review.rating;
