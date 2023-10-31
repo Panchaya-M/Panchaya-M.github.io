@@ -1,3 +1,5 @@
+import { addProductToCart } from './cart.js';
+
 export let products = [];
 let slideIndex = 0;
 
@@ -41,7 +43,7 @@ function createBestSellerProducts() {
 
   let element = document.getElementById('best-seller');
   for(let product of bestSellerProducts) {
-    creatCardProduct(element, product);
+    creatCardProduct(element, product, 'best-seller');
   }
   carouseButtons('bestseller');
 }
@@ -50,7 +52,7 @@ function createNewItems() {
   let newItems = filterNemItems();
   let element = document.getElementById('new-items');
   for(let product of newItems) {
-    creatCardProduct(element, product);
+    creatCardProduct(element, product, 'new-item');
   }
   carouseButtons('new-items');
 }
@@ -59,12 +61,12 @@ function createPromotionProducts() {
   let promotionProducts = filterPromotionProducts();
   let element = document.getElementById('promotions');
   for(let product of promotionProducts) {
-    creatCardProduct(element, product);
+    creatCardProduct(element, product, 'promotion');
   }
   carouseButtons('promotions');
 }
 
-export function creatCardProduct(element, product) {
+export function creatCardProduct(element, product, type) {
   const id = product.id;
   let card = document.createElement('div');
   card.classList.add('card');
@@ -91,20 +93,20 @@ export function creatCardProduct(element, product) {
       ${calculatePriceOfProduct(product.price, product.percent_discount)}
       </div>
       <div class="col text-end">
-        ${createAddToCartButton(id)}
+        <button id="btn-${type}-${id}" type="button" class="btn button-primary">ADD TO CART</button>
       </div>
     </div>
   </div>`
   element.appendChild(card)
 
-  const button = document.getElementById(`btn-${id}`);
+  const button = document.getElementById(`btn-${type}-${id}`);
   button.addEventListener('click', function() {
-    addtoCart(id)
+    addtoCart(product)
   })
 }
 
-function addtoCart(id) {
-  console.log('Add Product' + id + ' to cart.');
+function addtoCart(product) {
+  addProductToCart(product);
 }
 
 //Carousel slide

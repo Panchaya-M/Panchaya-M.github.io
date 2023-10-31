@@ -30,7 +30,7 @@ function createProducts(products) {
   let element = document.getElementById('product-container');
   element.innerHTML = null;
   for(let product of products) {
-    creatCardProduct(element, product);
+    creatCardProduct(element, product, 'product');
   }
 }
 
