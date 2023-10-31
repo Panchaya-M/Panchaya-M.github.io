@@ -166,8 +166,12 @@ li .list-group-item--active::before {
   color: var(--primary);
 }
 
+.c-secondary {
+  color: var(--secondary);
+}
+
 .card-img {
-  height: 400px;
+  height: 270px;
   background-size: 100% auto; 
   background-position: center bottom;
   cursor: pointer;
@@ -177,6 +181,13 @@ li .list-group-item--active::before {
   background-size: 110% auto;
   transition: all linear 0.1s;
 
+}
+
+.product-detail-img {
+  height: 400px;
+  background-size: auto 100%; 
+  background-position: left bottom;
+  background-repeat: no-repeat;
 }
 
 .card-product-detail {
@@ -220,8 +231,8 @@ li .list-group-item--active::before {
 }
 
 .card {
-  min-width: 350px;
-  width: 350px;
+  min-width: 300px;
+  width: 300px;
   padding: 1rem 1rem 0rem 1rem;
   border: none;
 }
@@ -247,6 +258,12 @@ li .list-group-item--active::before {
 .rating-star {
   display: flex;
   gap: 0.25rem
+}
+
+.reviewer {
+  display: flex;
+  gap: 1.25rem;
+  padding-top: 2.5rem;
 }
 
 .cursor-pointer {
@@ -280,6 +297,15 @@ footer .nav-link {
   background-color: #F1EEEA !important;
   border-color: #dee2e6 !important;
 }
+
+a {
+  text-decoration: none;
+}
+
+a .product-name{
+  color: var(--primary);
+}
+
 
 @media (max-width: 576px) {
   .carousel-caption .button-primary {
