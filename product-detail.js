@@ -1,4 +1,5 @@
 import { createRatingStar, findMeanOfRating } from "./script.js";
+import { addProductToCart } from './cart.js';
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
@@ -54,7 +55,7 @@ function calculatePriceOfProduct(fullPrice, percentDiscount) {
 //Button add to cart event
 const buttonAdd = document.getElementById('btn-add');
 buttonAdd.addEventListener('click', function() {
-  console.log('Add to cart.');
+  addProductToCart(product);
 });
 
 
