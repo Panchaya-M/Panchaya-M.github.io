@@ -1,4 +1,14 @@
-import { products, creatCardProduct } from "./script.js";
+import { creatCardProduct } from "./script.js";
+
+
+let products = [];
+
+async function loadData() {
+  await fetch('/src/datas/products.json').then((res) => res.json())
+    .then((json) => products = json);
+}
+
+await loadData();
 
 const urlParams = new URLSearchParams(window.location.search);
 const categoryFilter = urlParams.get("category");
@@ -30,7 +40,7 @@ function createProducts(products) {
   let element = document.getElementById('product-container');
   element.innerHTML = null;
   for(let product of products) {
-    creatCardProduct(element, product);
+    creatCardProduct(element, product, 'product');
   }
 }
 
