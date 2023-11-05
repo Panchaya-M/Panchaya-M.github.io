@@ -42,6 +42,7 @@ export function updateCarts() {
 
 export function clearCarts() {
   localStorage.removeItem('carts');
+  calulateOrders();
 }
 
 function reduceProduct(id) {

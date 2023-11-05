@@ -377,6 +377,19 @@ a .product-name{
   border-radius: 14px;
 }
 
+input {
+  height: 30px;
+  border-radius: 4px;
+}
+
+textarea {
+  border-radius: 4px;
+}
+
+.payment-method {
+  height: 65px;
+}
+
 @media (max-width: 576px) {
   .carousel-caption .button-primary {
     border: none;
