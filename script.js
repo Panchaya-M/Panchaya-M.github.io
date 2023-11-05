@@ -1,6 +1,6 @@
 import { addProductToCart } from './cart.js';
 
-export let products = [];
+let products = [];
 let slideIndex = 0;
 
 async function loadData() {
@@ -196,20 +196,8 @@ export function findMeanOfRating(reviews) {
   return (sum / reviews.length) || 0;
 }
 
-//Add to cart button
-function createAddToCartButton(id) {
-  let button = document.createElement('button');
-  button.type = 'button';
-  button.id = `btn-${id}`;
-  button.classList.add('btn');
-  button.classList.add('button-primary')
-  button.textContent = 'ADD TO CART'
-
-  return button.outerHTML;
-}
-
 //Calculate price after discount
-function calculatePriceOfProduct(fullPrice, percentDiscount) {
+export function calculatePriceOfProduct(fullPrice, percentDiscount) {
   if (!percentDiscount) {
     return `<h5 class="m-0">$${fullPrice.toFixed(2)}</h5>`
   }
