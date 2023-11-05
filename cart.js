@@ -48,10 +48,14 @@ export function clearCarts() {
 function reduceProduct(id) {
   const haveProductIndex = carts.findIndex((s) => id == s.id);
   if (haveProductIndex >= 0) {
-    carts[haveProductIndex].selectedAmount -= 1;
-    updateCarts();
-    updateAmountValue(id , carts[haveProductIndex].selectedAmount);
-    calulateOrders();
+    if (carts[haveProductIndex].selectedAmount == 1) {
+      removeProduct(id);
+    } else {
+      carts[haveProductIndex].selectedAmount -= 1;
+      updateCarts();
+      updateAmountValue(id , carts[haveProductIndex].selectedAmount);
+      calulateOrders();
+    }
   }
 }
 
